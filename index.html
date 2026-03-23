@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klinika Barku — Centrum Medyczne Brzóska</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Barlow+Condensed:wght@400;500;600;700;800&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="document.getElementById('mobileMenu').classList.remove('open')">✕</button>
+  <a href="#home" onclick="document.getElementById('mobileMenu').classList.remove('open')">Strona główna</a>
+  <a href="#onas" onclick="document.getElementById('mobileMenu').classList.remove('open')">O nas</a>
+  <a href="#zespol" onclick="document.getElementById('mobileMenu').classList.remove('open')">Zespół</a>
+  <a href="#kontakt" onclick="document.getElementById('mobileMenu').classList.remove('open')">Kontakt</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <div class="logo-icon">
+        <img src="./images/logo-kb.png" alt="Klinika Barku logo" width="40">
+      </div>
+      <div>
+        <div class="logo-name">Klinika Barku</div>
+        <div class="logo-sub">Centrum Medyczne Brzóska</div>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#home">Strona główna</a>
+      <a href="#onas">O nas</a>
+      <a href="#zespol">Zespół</a>
+      <a href="#kontakt" class="nav-cta">Umów wizytę</a>
+    </nav>
+
+    <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.add('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-copper-bar"></div>
+  <div class="hero-right-panel"></div>
+
+  <div class="hero-inner">
+    <!-- Left -->
+    <div>
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-line"></span>
+        <span class="hero-eyebrow-text">Centrum Medyczne Brzóska</span>
+      </div>
+      <h1 class="hero-title">Specjalistyczna<br>Klinika Barku</h1>
+      <span class="hero-title-italic">Przywracamy sprawność — bez kompromisów</span>
+      <p class="hero-desc">
+        Doświadczenie spotyka się z najnowszymi technikami artroskopowymi. Precyzyjna diagnostyka, skuteczne leczenie i pełne wsparcie — od pierwszej wizyty po powrót do aktywności.
+      </p>
+      <div class="hero-buttons">
+        <a href="#kontakt" class="btn-copper">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Umów wizytę
+        </a>
+       
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">20+</span>
+          <span class="hero-stat-label">lat w chirurgii<br>artroskopowej</span>
+        </div>
+        <div class="hero-stat-div"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">1#</span>
+          <span class="hero-stat-label">klinika barku<br>w Polsce</span>
+        </div>
+        <div class="hero-stat-div"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">ESA</span>
+          <span class="hero-stat-label">Europejskie Stow.<br>Ortopedii Sportowej</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div>
+      <div style="display:flex; align-items:center; gap:16px; margin-bottom:28px;">
+        <div class="logo-circle">
+          <img src="./images/logo-kb.png" alt="Klinika Barku">
+        </div>
+        <div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-size:1.45rem; font-weight:800; letter-spacing:1px; text-transform:uppercase; color:white; line-height:1.1;">
+            Klinika Barku
+          </div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-size:0.62rem; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; color:var(--copper-mid); margin-top:4px;">
+            Centrum Medyczne Brzóska
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-img">
+          <img src="./images/hero-kb.png" alt="Klinika Barku — przywracamy sprawność">
+        </div>
+        <div class="hero-card-body">
+          <span class="hero-card-tag">Już otwarte!</span>
+          <h3>Nowoczesna klinika w Bielsku-Białej</h3>
+          <p>Zaawansowany sprzęt artroskopowy i doświadczony zespół specjalistów gotowy Ci pomóc.</p>
+          <a href="#onas" class="hero-card-link">Poznaj nas →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BOLI CIĘ BARK -->
+<div class="symptoms-bg" id="objawy">
+  <div class="section">
+    <div class="symptoms-grid">
+      <div>
+        <div class="reveal">
+          <p class="section-tag">Kiedy do nas przyjść?</p>
+          <h2 class="section-title">Boli Cię bark? <em>Nie ignoruj sygnałów</em></h2>
+          <span class="section-accent" style="background: linear-gradient(90deg, var(--copper), transparent);"></span>
+          <p class="section-lead">Wczesna diagnostyka często pozwala uniknąć operacji. Rozpoznajemy pierwsze objawy wymagające konsultacji:</p>
+        </div>
+        <ul class="symptom-list reveal">
+          <li class="symptom-item"><div class="symptom-dot"></div><span class="symptom-text">Uczucie „blokowania" podczas ubierania się lub sięgania do góry</span></li>
+          <li class="symptom-item"><div class="symptom-dot"></div><span class="symptom-text">Ból barku przy podnoszeniu ręki lub noszeniu cięższych rzeczy</span></li>
+          <li class="symptom-item"><div class="symptom-dot"></div><span class="symptom-text">Dyskomfort lub ból barku w nocy, utrudniający spokojny sen</span></li>
+          <li class="symptom-item"><div class="symptom-dot"></div><span class="symptom-text">Przeszywający ból po urazie, upadku lub gwałtownym ruchu</span></li>
+          <li class="symptom-item"><div class="symptom-dot"></div><span class="symptom-text">Osłabienie siły w ramieniu lub trudności z codzienną aktywnością</span></li>
+          <li class="symptom-item"><div class="symptom-dot"></div><span class="symptom-text">Nawracające zwichnięcia lub poczucie niestabilności stawu</span></li>
+        </ul>
+      </div>
+
+      <div class="cta-box reveal">
+        <div style="margin-bottom:20px;">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="var(--copper-mid)" stroke-width="1.5" style="opacity:0.8">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+          </svg>
+        </div>
+        <h3>Nie czekaj — <em>działaj dziś</em></h3>
+        <p>Nasz specjalista oceni Twój bark i dobierze najlepszą metodę leczenia.</p>
+        <a href="#kontakt" class="btn-copper-outline">Umów konsultację</a>
+        <p style="font-size:0.74rem;color:rgba(255,255,255,0.25);margin-top:16px;margin-bottom:0;">Odpowiadamy w ciągu 24 godzin roboczych</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- O NAS -->
+<div class="onas-bg" id="onas">
+  <div class="section">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-main-photo">
+          <!-- <img src="./images/klinika.png" alt="Klinika Barku"> -->
+          <div class="about-ph">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40 5C40 5 70 18 70 42C70 62 57 75 40 75C23 75 10 62 10 42C10 18 40 5 40 5Z"/>
+            </svg>
+            <p>Zdjęcie kliniki</p>
+          </div>
+        </div>
+        <div class="about-float-badge">
+          <div class="about-float-num">20+</div>
+          <div class="about-float-text">lat w chirurgii<br>barku</div>
+        </div>
+        <div class="about-float-bottom">
+          <span>Pierwsza taka klinika w Polsce</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <p class="section-tag">O klinice</p>
+        <h2 class="section-title">Klinika Barku — <em>Centrum Medyczne Brzóska</em></h2>
+        <span class="section-accent"></span>
+        <p class="about-text">
+          Jesteśmy wyspecjalizowaną kliniką zajmującą się schorzeniami stawu barkowego. Nasza misja to precyzyjna diagnostyka, skuteczne leczenie i pełne wsparcie pacjenta — od pierwszej wizyty aż po powrót do aktywności.
+        </p>
+        <p class="about-text">
+          Klinikę tworzy dr hab. n. med. Roman Brzóska — jeden z czołowych chirurgów barku w Polsce — wraz z doświadczonym. Stawiamy na indywidualne podejście, rzetelną komunikację i realną troskę na każdym etapie leczenia.
+        </p>
+        <ul class="about-checks">
+          <li>
+            <div class="check-icon"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>
+            <span>Jedyna w Polsce klinika skupiona wyłącznie na barku — maksymalna specjalizacja to gwarancja jakości</span>
+          </li>
+          <li>
+            <div class="check-icon"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>
+            <span>Nowoczesny sprzęt artroskopowy i fizjoterapia — wszystko pod jednym dachem</span>
+          </li>
+          <li>
+            <div class="check-icon"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>
+            <span>Szybki dostęp — terminy konsultacji dostępne nawet w ciągu kilku dni</span>
+          </li>
+          <li>
+            <div class="check-icon"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></div>
+            <span>Pełna przejrzystość kosztów i jasna komunikacja na każdym etapie</span>
+          </li>
+        </ul>
+        <a href="#kontakt" class="btn-copper">Umów pierwszą wizytę</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ZESPÓŁ -->
+<div class="team-bg" id="zespol">
+  <div class="section">
+    <div class="reveal" style="margin-bottom:40px">
+      <p class="section-tag">Nasz zespół</p>
+      <h2 class="section-title">Specjaliści, którym <em>możesz zaufać</em></h2>
+      <span class="section-accent" style="background: linear-gradient(90deg, var(--copper), transparent);"></span>
+      <p class="section-lead">Nasz zespół to lekarze z pasją i wieloletnim doświadczeniem. Każdy pacjent otrzymuje pełne zaangażowanie i indywidualną opiekę.</p>
+    </div>
+
+    <div class="team-grid">
+
+      <!-- dr hab. Roman Brzóska -->
+      <div class="team-card reveal">
+
+        <div class="team-info">
+          <span class="team-spec">Ortopedia barku</span>
+          <h3 class="team-name">dr hab. n. med. Roman Brzóska</h3>
+          <p class="team-bio">Specjalizuje się w chirurgii artroskopowej barku i leczeniu urazów sportowych. Prezydent sekcji barkowej ESA-ESSKA (2016–2018). Jako pierwszy w Polsce wykonał artroskopową kostną rekonstrukcję panewki (2009). Organizator Bielskich Sympozjów Naukowych z zakresu chirurgii barku.</p>
+          <div class="team-hours">
+            <p class="team-hours-label">Godziny przyjęć</p>
+            <div class="team-hours-grid">
+              <span class="team-hours-day">Pon</span><span class="team-hours-time">13:00 – 17:00</span>
+              <span class="team-hours-day">Śr</span><span class="team-hours-time">13:00 – 17:00</span>
+              <span class="team-hours-day">Pt</span><span class="team-hours-time">9:00 – 14:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- dr Adrian Błasiak -->
+      <div class="team-card reveal">
+        <div class="team-info">
+          <span class="team-spec">Ortopedia barku</span>
+          <h3 class="team-name">dr n. med. Adrian Błasiak</h3>
+          <p class="team-bio">Doświadczony ortopeda i traumatolog z ponad 15‑letnią praktyką w diagnostyce i leczeniu urazów oraz schorzeń stawów. Specjalizuje się w chirurgii barku, rekonstrukcji stożka rotatorów oraz leczeniu niestabilności stawu ramiennego. Dzięki połączeniu wiedzy klinicznej z doświadczeniem w nowoczesnych technikach artroskopowych zapewnia pacjentom bezpieczne, skuteczne i nowoczesne leczenie.</p>
+          <div class="team-hours">
+            <p class="team-hours-label">Godziny przyjęć</p>
+            <div class="team-hours-grid">
+              <span class="team-hours-day">Czw</span><span class="team-hours-time">8:00 – 14:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- dr Patryk Kłaptocz -->
+      <div class="team-card reveal">
+        <div class="team-info">
+          <span class="team-spec">Fizjoterapia</span>
+          <h3 class="team-name">dr n. fizj. Patryk Kłaptocz</h3>
+          <p class="team-bio">Specjalista w rehabilitacji barku i stawów kończyny górnej, prowadząc terapię pacjentów dorosłych oraz sportowców. Dzięki wieloletniemu doświadczeniu w pracy z profesjonalnymi drużynami i reprezentacjami, a także w renomowanych klinikach w Polsce i za granicą, zapewnia skuteczną i nowoczesną opiekę fizjoterapeutyczną.</p>
+          <div class="team-hours">
+            <p class="team-hours-label">Godziny przyjęć</p>
+            <p class="team-hours-soon">Harmonogram wkrótce</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- KONTAKT -->
+<div class="kontakt-bg" id="kontakt">
+  <div class="section">
+    <div class="reveal" style="margin-bottom:44px">
+      <p class="section-tag">Kontakt i rejestracja</p>
+      <h2 class="section-title">Umów się — <em>to łatwiejsze niż myślisz</em></h2>
+      <span class="section-accent" style="background: linear-gradient(90deg, var(--copper), transparent);"></span>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Jesteśmy tu dla <em>Ciebie</em></h3>
+        <p>Skontaktuj się telefonicznie, mailowo lub wypełnij formularz. Odezwiemy się najszybciej jak to możliwe.</p>
+
+        <div class="ci-list">
+          <div class="ci-item">
+            <div class="ci-icon-wrap"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.7A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg></div>
+            <div><p class="ci-label">Telefon</p><a href="tel:+48539499040" class="ci-value">+48 539 499 040</a></div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon-wrap"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><p class="ci-label">Email</p><a href="mailto:kontakt@klinikabarku.pl" class="ci-value">kontakt@klinikabarku.pl</a></div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon-wrap"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><p class="ci-label">Adres</p><a href="https://maps.app.goo.gl/3KmsS8Cg4DcCfAZaA" target="_blank" class="ci-value">ul. Emilii Plater 18a, 43-300 Bielsko-Biała</a></div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon-wrap"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <div><p class="ci-label">Strona</p><a href="https://www.klinikabarku.pl" class="ci-value">www.klinikabarku.pl</a></div>
+          </div>
+        </div>
+
+        <div class="hours-box">
+          <h4>Godziny przyjęć</h4>
+          <div class="hours-row"><span>Poniedziałek – Piątek</span><span>8:00 – 18:00</span></div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <h3>Formularz rejestracyjny</h3>
+        <p>Wypełnij formularz, a skontaktujemy się z Tobą by ustalić termin.</p>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Imię i nazwisko</label>
+            <input type="text" placeholder="Jan Kowalski">
+          </div>
+          <div class="form-group">
+            <label>Telefon</label>
+            <input type="tel" placeholder="+48 000 000 000">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="nazwa@email.com">
+          </div>
+          <div class="form-group">
+            <label>Usługa</label>
+            <select>
+              <option value="">Wybierz usługę...</option>
+              <option>Konsultacja ortopedyczna</option>
+              <option>Artroskopia barku</option>
+              <option>Rekonstrukcja stożka rotatorów</option>
+              <option>Leczenie niestabilności barku</option>
+              <option>Endoprotezoplastyka</option>
+              <option>Fizjoterapia / Rehabilitacja</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group form-full">
+            <label>Opisz swój problem (opcjonalnie)</label>
+            <textarea placeholder="Np. ból barku od 3 miesięcy, szczególnie przy podnoszeniu ręki..."></textarea>
+          </div>
+        </div>
+
+        <button class="btn-copper" style="width:100%;justify-content:center;margin-top:8px;border-radius:3px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Wyślij zgłoszenie
+        </button>
+        <p style="font-size:0.75rem;color:var(--text-light);text-align:center;margin-top:10px;">Odpowiadamy w ciągu 24 godzin roboczych</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-copper-bar"></div>
+  <div style="max-width:1300px;margin:0 auto;padding:0 0;">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-logo">
+          <div class="footer-logo-icon">
+            <img src="./images/logo-kb.png" alt="Klinika Barku logo" width="40">
+          </div>
+          <div>
+            <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:white;line-height:1.1;">Klinika Barku</div>
+            <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.56rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--copper-mid);margin-top:2px;">Centrum Medyczne Brzóska</div>
+          </div>
+        </div>
+        <p class="footer-desc">Specjalistyczna klinika chirurgii i fizjoterapii stawu barkowego. Leczymy z precyzją i troską o każdego pacjenta.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">fb</a>
+          <a href="#" class="social-btn">ig</a>
+          <a href="#" class="social-btn">in</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Specjaliści</h4>
+        <ul>
+          <li><a href="#zespol">dr hab. Roman Brzóska</a></li>
+          <li><a href="#zespol">dr Adrian Błasiak</a></li>
+          <li><a href="#zespol">dr Patryk Kłaptocz</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+48539499040">+48 539 499 040</a></li>
+          <li><a href="mailto:kontakt@klinikabarku.pl">kontakt@klinikabarku.pl</a></li>
+          <li><a href="https://maps.app.goo.gl/3KmsS8Cg4DcCfAZaA" target="_blank" class="ci-value">ul. Emilii Plater 18a, 43-300 Bielsko-Biała</a></li>
+          <li><a href="#">www.klinikabarku.pl</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Klinika Barku · Centrum Medyczne Brzóska</p>
+      <p class="footer-tagline">Przywracamy sprawność</p>
+      <p class="footer-copy">Polityka prywatności · RODO</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const els = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  els.forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
